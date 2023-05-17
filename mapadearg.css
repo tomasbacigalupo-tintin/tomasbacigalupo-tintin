@@ -1,0 +1,50 @@
+#map-container {
+    position: relative;
+    width: 800px; 
+    height: 600px; 
+  }
+  
+  #argentina-map {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #arrow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 00%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .arrow {
+    position: absolute;
+    background-color: #ff0000; 
+    width: 3px; 
+    height: 0;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    opacity: 0;
+    animation: arrow-animation 2s infinite;
+  }
+  
+  @keyframes arrow-animation {
+    0% {
+      opacity: 0;
+      height: 0;
+    }
+    25% {
+      opacity: 1;
+      height: 300px; /* Ajusta la longitud de las flechas */
+    }
+    75% {
+      opacity: 1;
+      height: 100px; /* Ajusta la longitud de las flechas */
+    }
+    100% {
+      opacity: 0;
+      height: 0;
+    }
+  }
+  
